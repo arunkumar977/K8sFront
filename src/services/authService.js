@@ -1,7 +1,7 @@
 import axios from "axios";
 
-// ✅ Backend NodePort and correct route
-const API_URL = "http://localhost:30083/auth";
+// ✅ Backend NodePort + correct WAR context path
+const API_URL = "http://localhost:30083/back1/auth";
 
 export const login = async (username, password) => {
   const response = await axios.post(`${API_URL}/login`, { username, password });
