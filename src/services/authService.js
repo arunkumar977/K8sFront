@@ -4,7 +4,7 @@ const hostname = window.location.hostname;
 const isLocal = hostname === "localhost" || hostname === "127.0.0.1";
 
 const API_URL = isLocal
-  ? "http://localhost:30083/back1/auth"   // for Postman or local dev
+  ? "http://localhost:30083/back1/auth"   // local testing (Postman / npm run dev)
   : "http://backend:8080/back1/auth";     // inside Kubernetes
 
 export const login = async (username, password) => {
